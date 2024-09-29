@@ -6,7 +6,7 @@ from matplotlib.colors import Normalize
 import matplotlib.patches as mpatches
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 import numpy as np
-
+## Used Generative AI to generate the following code snippet
 df = pd.read_excel('Data/emissions.xlsx')
 df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
 df.fillna(0, inplace=True)

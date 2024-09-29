@@ -22,7 +22,7 @@ df_clean = df.dropna()
 
 high_vulnerability_threshold = 0.5
 df_high_vulnerability = df_clean[df_clean['Climate Vulnerability Score'] > high_vulnerability_threshold]
-
+## Used Generative AI to generate the following code snippet
 correlation_data = df_high_vulnerability[['GDP (current US$)', 'Population(Thousands)', 'CO2 Emissions (Metric Tons)', 'Emissions']]
 corr_matrix = correlation_data.corr(method='pearson')
 print("\nPearson Correlation Coefficient Matrix (High Vulnerability Countries):")

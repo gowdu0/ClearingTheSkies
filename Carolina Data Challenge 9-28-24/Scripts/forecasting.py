@@ -25,7 +25,7 @@ correlation_data = df_clean[['GDP (current US$)', 'Population(Thousands)', 'CO2 
 corr_matrix = correlation_data.corr(method='pearson')
 print("\nPearson Correlation Coefficient Matrix:")
 print(corr_matrix)
-
+## Used Generative AI to generate the following code snippet
 fig_corr = px.imshow(
     corr_matrix,
     text_auto=True,
